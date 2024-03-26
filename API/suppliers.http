@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/suppliers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA1NTAyMDIsImV4cCI6MTcxMTE1NTAwMn0.5CENQvLtjSWJdsFWaOBxGw9msaigIf1P6cLUUZ8pNlc
+
+###
+
+POST http://localhost:3000/api/suppliers/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA1NTAyMDIsImV4cCI6MTcxMTE1NTAwMn0.5CENQvLtjSWJdsFWaOBxGw9msaigIf1P6cLUUZ8pNlc
+
+{
+    "proveedor_id": 0,
+    "pais_id": 100,
+    "nombre": "Samsung",
+    "email": "samsungcontact@gmail.com"
+}
+
+###
+
+DELETE http://localhost:3000/api/suppliers/delete/15
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA1NTAyMDIsImV4cCI6MTcxMTE1NTAwMn0.5CENQvLtjSWJdsFWaOBxGw9msaigIf1P6cLUUZ8pNlc
+
+
+###
+
+PATCH http://localhost:3000/api/suppliers/update/16
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA5ODA4NDgsImV4cCI6MTcxMTU4NTY0OH0.5u9sg-bxaIfw9YQ4Tr0U9Q4APnmo6X4UO6WxcPt-mOE
+
+{
+    "nombre": "Kingston"
+}

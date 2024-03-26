@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/companies
+
+###
+
+GET http://localhost:3000/api/companies/1
+
+###
+
+POST http://localhost:3000/api/companies/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6bnVsbCwicm9sSWQiOjQsImlhdCI6MTcxMTE1NjEyNSwiZXhwIjoxNzExNzYwOTI1fQ.OpTt2TyCfZ-Bu4wdK5drAv4zOXfT5j5RKMVOcKwdd1k
+
+
+{
+    "nombre": "Pizza House",
+    "email": "pizzahouse@gmail.com",
+    "telefono": 955118989
+}
+
+###
+
+DELETE http://localhost:3000/api/companies/delete 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzcsInJvbElkIjo0LCJpYXQiOjE3MTE0MDg0ODgsImV4cCI6MTcxMjAxMzI4OH0.ZM7z9CgDPknUmTso4TOJwC89qBOFE72GFbp00TX1iwA
+
+###
+
+PATCH http://localhost:3000/api/companies/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzcsInJvbElkIjo0LCJpYXQiOjE3MTE0MDg0ODgsImV4cCI6MTcxMjAxMzI4OH0.ZM7z9CgDPknUmTso4TOJwC89qBOFE72GFbp00TX1iwA
+
+{
+    "nombre": "Pepperonni House"
+}
+
+###

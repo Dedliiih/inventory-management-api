@@ -1,0 +1,40 @@
+GET http://localhost:3000/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA5ODA4NDgsImV4cCI6MTcxMTU4NTY0OH0.5u9sg-bxaIfw9YQ4Tr0U9Q4APnmo6X4UO6WxcPt-mOE
+
+###
+
+GET http://localhost:3000/api/products/search?name=Memoria+ram+ddr5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA5ODM4NDMsImV4cCI6MTcxMTU4ODY0M30.uyGMMAjYl_WUV03AW6t5YIIICIptkehAxvt_Lam7BBY
+
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA5ODA4NDgsImV4cCI6MTcxMTU4NTY0OH0.5u9sg-bxaIfw9YQ4Tr0U9Q4APnmo6X4UO6WxcPt-mOE
+
+{
+    "producto_id": 0,
+    "nombre": "Helado savory",
+    "precio": 25000,
+    "modelo": "Kingston Fury",
+    "proveedor_id": 16,
+    "stock": 10,
+    "descripcion": "RAM DDR4 8GB 5400Mhz",
+    "numero_serie": 102130
+}
+
+###
+
+PATCH http://localhost:3000/api/products/update/35
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA5ODA4NDgsImV4cCI6MTcxMTU4NTY0OH0.5u9sg-bxaIfw9YQ4Tr0U9Q4APnmo6X4UO6WxcPt-mOE
+
+
+{   
+   "precio": 30000
+}
+
+###
+
+DELETE http://localhost:3000/api/products/delete/67
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA5ODM4NDMsImV4cCI6MTcxMTU4ODY0M30.uyGMMAjYl_WUV03AW6t5YIIICIptkehAxvt_Lam7BBY

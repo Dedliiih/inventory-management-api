@@ -1,0 +1,28 @@
+GET http://localhost:3000/api/permissions
+
+###
+
+GET http://localhost:3000/api/permissions/1
+
+### 
+
+POST http://localhost:3000/api/permissions
+Content-Type: application/json
+
+{
+    "nombre": "Borrar usuarios",
+    "descripcion": "Como CEO, podrá borrar usuarios de su empresa"
+}
+
+###
+
+DELETE http://localhost:3000/api/permissions/2
+
+###
+
+PATCH http://localhost:3000/api/permissions/1
+Content-Type: application/json
+
+{
+    "nombre": "Agregar Usuarios"
+}

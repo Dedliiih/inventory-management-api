@@ -1,0 +1,42 @@
+GET http://localhost:3000/api/company/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA4MDYwODEsImV4cCI6MTcxMTQxMDg4MX0.CIlZdk_PQaKsg9QVYGWXQj3sV5EXKwH8J-43ZgwpDO4
+###
+
+GET http://localhost:3000/api/company/users/search?name=Joaquin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTA4MDYwODEsImV4cCI6MTcxMTQxMDg4MX0.CIlZdk_PQaKsg9QVYGWXQj3sV5EXKwH8J-43ZgwpDO4
+
+###
+
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+    "nombre_usuario": "Papote_Malote",
+    "nombre": "Carlos",
+    "apellidos": "Valderrama",
+    "contraseña": "raviolesconqueso!",
+    "email": "carlosvalderrama@gmail.com",
+    "telefono": 56922178909
+}
+
+###
+
+PATCH http://localhost:3000/api/company/users/update/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJQcmljc2EiLCJjb21wYW55SWQiOjEsInJvbElkIjozLCJpYXQiOjE3MDk3NzI5OTMsImV4cCI6MTcxMDM3Nzc5M30.Dy9gtd7oCE276zw7wRfhD6i8W2mIdJ3u-YQTNBM5UQM
+
+{
+    "rol_id": 5
+}
+
+###
+
+PATCH http://localhost:3000/api/company/users/delete/17
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiVG9wb2lkZSIsImNvbXBhbnlJZCI6MzUsInJvbElkIjozLCJpYXQiOjE3MTAzNDQzNDEsImV4cCI6MTcxMDk0OTE0MX0.q766Fh5ION4HM_YAexbILQtyP7sAtlm05sMlW8sWeQw
+###
+
+PATCH http://localhost:3000/api/company/users/add/11
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJQcmljc2EiLCJjb21wYW55SWQiOjEsInJvbElkIjozLCJpYXQiOjE3MDk3NzM2NDcsImV4cCI6MTcxMDM3ODQ0N30.fLPdZJXgNy8HtxyvDo-oBfvzGNJh6n7TedBTwaTnjX0
+
