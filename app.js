@@ -49,7 +49,6 @@ app.use(signRoutes);
 
 app.use(notFound);
 app.use(redirectHttps);
-
 const PORT = process.env.PORT || 3002;
 
 const server = app.listen(PORT, () => {
